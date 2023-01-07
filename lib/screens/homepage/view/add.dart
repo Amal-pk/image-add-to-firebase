@@ -51,7 +51,7 @@ class Edit extends StatelessWidget {
                   }
                   if (snapshot.connectionState == ConnectionState.waiting ||
                       !snapshot.hasData) {
-                    return const CircularProgressIndicator();
+                    return const Center(child: CircularProgressIndicator());
                   }
                   return Container();
                 }),

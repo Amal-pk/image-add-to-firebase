@@ -77,7 +77,7 @@ class HomePage extends StatelessWidget {
               }
               if (snapshot.connectionState == ConnectionState.waiting ||
                   !snapshot.hasData) {
-                return Container();
+                return Center(child: CircularProgressIndicator());
               }
               return Container();
             }),

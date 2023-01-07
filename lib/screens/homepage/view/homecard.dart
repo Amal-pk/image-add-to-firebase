@@ -42,8 +42,10 @@ class HomeCardsWidgets extends StatelessWidget {
               }
               if (snapshot.connectionState == ConnectionState.waiting ||
                   !snapshot.hasData) {
-                return const CircularProgressIndicator(
-                  color: Colors.red,
+                return const Center(
+                  child: CircularProgressIndicator(
+                    color: Colors.red,
+                  ),
                 );
               }
               return Container();
